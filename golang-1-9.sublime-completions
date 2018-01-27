@@ -10,13 +10,18 @@
 
 		//constructs
 		{ "trigger": "forange ", "contents": "for $1,$2 := range $3 {\n    $4\n}" },
+		{ "trigger": "typestr ", "contents": "type $1 struct {\n	$2\n}"},
 
 		//imports
 		{ "trigger": "impfmt ", "contents": "import \"fmt\"" },
+		{ "trigger": "imptest ", "contents": "import \"testing\"" },
 
 		//printing
 		{ "trigger": "pr ", "contents": "fmt.Print($1)" },
-		{ "trigger": "prf ", "contents": "fmt.Printf($1, $2)" }
+		{ "trigger": "prf ", "contents": "fmt.Printf($1, $2)" },
+
+		//testing
+		{ "trigger": "test", "contents": "func Test$1 (t *testing.T) {\n	$2\n}" }
 
    	]
 }
