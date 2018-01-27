@@ -1,0 +1,15 @@
+{
+	"scope": "source.go",
+
+	
+   	"completions":
+   	[
+   		//region delimiters
+		{ "trigger": "delimline ", "contents": "/* ========= $1 ========= */" },
+		{ "trigger": "delimsevlines", "contents": "/* ==============================\n              $1                   \n   ============================== */" },
+
+		//constructs
+		{ "trigger": "forange ", "contents": "for $1,$2 := range $3 {\n    $4\n}" },
+
+   	]
+}
