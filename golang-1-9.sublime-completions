@@ -15,6 +15,10 @@
 		//imports
 		{ "trigger": "impfmt ", "contents": "import \"fmt\"" },
 		{ "trigger": "imptest ", "contents": "import \"testing\"" },
+		{ "trigger": "impgit ", "contents": "import \"github.com/$1/$2\"" },
+		{ "trigger": "impbitbuck ", "contents": "import \"bitbucket.org/$1/$2\"" },
+
+
 
 		//printing
 		{ "trigger": "pr ", "contents": "fmt.Print($1)" },
