@@ -1,0 +1,21 @@
+{
+	"scope": "source.python",
+
+	
+   	"completions":
+   	[
+   		//region delimiters
+		{ "trigger": "delimline ", "contents": "/* ========= $1 ========= */" },
+		{ "trigger": "delimsevlines", "contents": "/* ==============================\n              $1                   \n   ============================== */" },
+
+		//imports
+		{ "trigger": "imptest ", "contents": "import unittest" },
+		{ "trigger": "imptestcase ", "contents": "from unittest import TestCase" },
+
+		//testing
+		{ "trigger": "testcase", "contents": "class Test$1 (TestCase):\n	$2" },
+		{ "trigger": "testfunc", "contents": "def test_$1(self):\n	$2" }
+
+
+   	]
+}
