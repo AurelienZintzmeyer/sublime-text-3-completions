@@ -1,0 +1,17 @@
+{
+	"scope": "source.c++",
+
+	
+   	"completions":
+   	[
+   		{
+   			"trigger" : "ccodedelims",
+   		 	"contents": "%{\n#define YY_DECL extern \"C\" int yylex()\n\n#include \"parser.tab.h\"\n\n#include <cstdio>\n%}"
+         },
+
+         {
+            "trigger" : "ccode",
+            "contents": "#define YY_DECL extern \"C\" int yylex()\n\n#include \"parser.tab.h\"\n\n#include <cstdio>"
+         }
+   	]
+}
