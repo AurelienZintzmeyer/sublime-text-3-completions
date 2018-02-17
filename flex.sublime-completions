@@ -5,12 +5,12 @@
    	"completions":
    	[
    		{
-   			"trigger" : "ccodedelims",
+   			"trigger" : "fccodedelims",
    		 	"contents": "%{\n#define YY_DECL extern \"C\" int yylex()\n\n#include \"parser.tab.h\"\n\n#include <cstdio>\n%}"
          },
 
          {
-            "trigger" : "ccode",
+            "trigger" : "fccode",
             "contents": "#define YY_DECL extern \"C\" int yylex()\n\n#include \"parser.tab.h\"\n\n#include <cstdio>"
          }
    	]

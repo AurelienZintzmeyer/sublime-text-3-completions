@@ -1,0 +1,28 @@
+{
+	"scope": "source.bison",
+
+	
+   	"completions":
+   	[
+   		{
+   			"trigger" : "bccodedelims",
+   		 	"contents": "%{\n#include <cstdio>\n\nextern \"C\" int yylex();\nextern \"C\" int yyparse();\nextern \"C\" FILE *yyin;\nvoid yyerror(const char *s);\n%}"
+        },
+
+        {
+            "trigger" : "bccode",
+            "contents": "\n#include <cstdio>\n\nextern \"C\" int yylex();extern \"C\" int yyparse();\nextern \"C\" FILE *yyin;\nvoid yyerror(const char *s);"
+        },
+
+        {
+
+            "trigger" : "main",
+            "contents" : "int main(int argc, char** argv) {\n\n    FILE *file = fopen(argv[0], \"r\");\n    if (!file) {\n        printf(\"Can't open file\");\n        return -1;\n    }\n    yyin = file;\n    do {\n        yyparse();\n    }while (!feof(yyin));\n\n}"
+        },
+
+        {
+            "trigger" : "yyerror",
+            "contents" : "void yyerror(const char* s){\n    printf(\"parse error : %s\",s);\n}"
+        }
+   	]
+}
