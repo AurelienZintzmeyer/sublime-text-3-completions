@@ -1,0 +1,12 @@
+{
+	"scope": "source.c++",
+
+	
+   	"completions":
+   	[
+   		//region delimiters
+		{ "trigger": "delimline ", "contents": "/* ========= $1 ========= */" },
+		{ "trigger": "delimsevlines", "contents": "/* ==============================\n              $1                   \n   ============================== */" }
+
+   	]
+}
