@@ -1,0 +1,15 @@
+{
+	"scope": "source.js",
+
+	
+   	"completions":
+   	[
+   		//region delimiters
+		{ "trigger": "delimline ", "contents": "/* ========= $1 ========= */" },
+
+		{ "trigger": "delimsevlines", "contents": "/* ==============================\n              $1                   \n   ============================== */" },
+
+		//documentation
+		{"trigger":"jsdocfunc", "contents" : "/**\n * @param {$1} $2 - $3\n * \n */"}
+   	]
+}
