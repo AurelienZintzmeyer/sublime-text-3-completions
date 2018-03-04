@@ -10,6 +10,13 @@
 		{ "trigger": "delimsevlines", "contents": "/* ==============================\n              $1                   \n   ============================== */" },
 
 		//documentation
-		{"trigger":"jsdocfunc", "contents" : "/**\n * @param {$1} $2 - $3\n * \n */"}
+		{"trigger":"jsdocfunc", "contents" : "/**\n * @param {$1} $2 - $3\n * \n */"},
+
+		//require
+		{"trigger":"impath", "contents" : "const Path = require(\"path\");"},
+		{"trigger":"imurl", "contents" : "const Url = require(\"url\");"},
+		{"trigger":"imfs", "contents" : "const Fs = require(\"fs\");"},
+		{"trigger":"reqempty", "contents" : "const $1 = require(\"$2\");"},
+		{"trigger":"imrooty", "contents" : "require(\"rooty\")();"}
    	]
 }
